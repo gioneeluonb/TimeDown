@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">	
+	<title></title>
+</head>
+<body>
+<span class="day">00</span><span>天</span>
+<span class="hour">00</span><span>时</span>
+<span class="minute">00</span><span>分</span>
+<span class="second">00</span><span>秒后结束活动</span>
+<script type="text/javascript" src="./timedown.js"></script>
+<script type="text/javascript">
+	var target = {
+		year:2016,
+		month:9,
+		day:23,
+		hour:19,
+		minute:59,
+		second:59
+	};
+	window.onload = function(){
+		var timedown = new TimeDown('day','hour','minute','second',target);
+		timedown.init();
+		timedown.start();
+	}
+</script>
+</body>
+</html>
